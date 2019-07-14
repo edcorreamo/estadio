@@ -1,4 +1,3 @@
-# estadio
 Está página está diseñada para informar sobre la situación general de estadio Alfonzo López Pumarejo, es una página interactiva, que cuenta con videos, imágenes, rotaciones de 360 grados, links externos e internos. 
 Su estructura permite al usuario navegar en cualquier parte en la que se encuentre del menú 
 Como aportes. Inclusión de videos, uno de ellos auto-reproducido, tres videos, inclusión del fav icon como imagen que acompaña las pestaña, vista en 360 grados. Sonido.
