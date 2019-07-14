@@ -1,0 +1,573 @@
+@charset "UTF-8";
+/*charset para decir que se van a utilizar caracteres UTF-8*/
+/*font-face para enlazar la fuente descargada que se va a usar*/
+@font-face {
+  font-family: Radiant;
+  src: url(fuentes/Radiant.ttf);
+}
+@font-face {
+  font-family: maquina;
+  src: url(fuentes/maquina.ttf);
+}
+
+/*declaración de las caracteristicas unicas de las videos durante la navegación*/
+#video,video{
+    margin:0 auto;
+    text-align: center;   
+    max-height: 350px;
+    max-width:350px;
+    
+    }
+
+/*Si la pantalla tiene 850px o menos*/
+/*Esto lo hago para que no se estropee el diseño si por ejemplo se reduce a ese tamaño la pantalla estando en un computador*/
+@media only screen and ( max-width: 750px ){
+  .cajaMenu {
+    position: relative !important;
+    float: none !important;
+    width: 100% !important;
+  }
+  .cajaMenu .menu li {
+    text-align: center;
+  }
+  #presentacion {
+    margin: 30px 5px center;
+  }
+    .estadio{
+    text-align: center;
+    max-height: 350px;
+    max-width:350px;     
+}
+
+}
+
+/*Si la pantalla tiene 780px o menos*/
+@media only screen and ( max-width: 780px ){
+    
+    .estadio{
+    text-align: center;
+    max-height: 350px;
+    max-width:350px;
+
+        
+}
+     #video,video{
+    text-align: center;   
+    max-height: 350px;
+    max-width:350px;
+    }
+  /*Modificaciones en el encabezado*/
+
+  /*Imagen de fondo del encabezado*/
+  .encabezado {
+    background-image: url(imagenes/estadioblobal.jpg) !important;
+  }
+
+    .pieDePagina {
+    background-image: url(imagenes/estadioblobal.jpg) !important;
+  }
+
+  /*Modificaciones en el contenido*/
+
+  /*255px de #presentacion es el tamaño mínimo cuando la pantalla tenga 780px o menos*/
+  #presentacion {
+    min-width: 255px !important;
+  }
+
+  /*Contenedor de todas las imagenes*/
+  #presentacion .contImagen {
+    width: 400px !important;
+  }
+  /*Tamaño de las imagenes usadas en el sitio*/
+
+  #presentacion .img{
+    width: 400px !important;
+    height: 300px !important;
+  }
+  #presentacion .imgPlano {
+    width: 400px !important;
+    height: 377px !important;
+  }
+ 
+  #presentacion .imgInteriorAud {
+    width: 350px !important;
+    height: 233px !important;
+  }
+  /*Sala de conferencias*/
+  #presentacion .imgSalaConf {
+    width: 350px !important;
+    height: 123px !important;
+  }
+  /*Hall del primer, segundo piso y ofb*/
+  #presentacion .imgHall1 , #presentacion .imgHall2, #presentacion .imgOFB {
+    width: 350px !important;
+    height: 175px !important;
+  }
+  /*Logo Orquesta Filarmónica de Bogotá*/
+  #presentacion .imgLogoOFB {
+    width: 250px !important;
+    height: 114px !important;
+  }
+  /*Cómo llegar*/
+  #presentacion .imgComoLlegar {
+    width: 400px !important;
+    height: 290px !important;
+  }
+  /*Concierto 1,2 y 3*/
+  #presentacion .imgConcierto1, #presentacion .imgConcierto2, #presentacion .imgConcierto3 {
+    width: 350px !important;
+    height: 196px !important;
+  }
+}
+
+/*Hago esto para que no se estropee el diseño del pie de página al reducir el tamaño de la página a 530px o menos*/
+@media only screen and ( max-width: 530px ){
+  /*Cambiar la manera de mostrar las imagenes y el texto del pie de pie de página*/
+  #pieDePagina .imagenesPie {
+    position: relative;
+    margin-left: 35px !important;
+    margin-top: 15px !important;
+    float: none !important;
+  }
+  h5 {
+    float: none !important;
+    position: relative !important;
+  }
+}
+
+/*Si la pantalla tiene 480px o menos*/
+@media only screen and ( max-width: 480px ){
+
+  /*Modificaciones en el contenido*/
+
+  /*Modificar tabulación de todos los subtemas*/
+  #presentacion .subTema , #presentacion .subTema .subSubTema{
+    padding-left: 10px !important;
+  }
+
+  /*Contenedor de todas las imagenes*/
+  #presentacion .contImagen {
+    width: 230px !important;
+    border-radius: 15px !important;
+  }
+  /*Tamaño de las imagenes usadas en el sitio*/
+ 
+  #presentacion .imgAuditorio {
+    width: 230px !important;
+    height: 173px !important;
+  }
+ 
+  #presentacion .imgPlano {
+    width: 230px !important;
+    height: 217px !important;
+  }
+ 
+  #presentacion .imgInteriorAud {
+    width: 190px !important;
+    height: 127px !important;
+  }
+
+  #presentacion .imgSalaConf {
+    width: 190px !important;
+    height: 67px !important;
+  }
+
+  #presentacion .imgHall1 , #presentacion .imgHall2, #presentacion .imgOFB {
+    width: 190px !important;
+    height: 95px !important;
+  }
+
+  #presentacion .imgLogoOFB {
+    width: 150px !important;
+    height: 69px !important;
+  }
+  /*Cómo llegar*/
+  #presentacion .imgComoLlegar {
+    width: 190px !important;
+    height: 138px !important;
+  }
+
+  #presentacion .imgConcierto1, #presentacion .imgConcierto2, #presentacion .imgConcierto3 {
+    width: 190px !important;
+    height: 106px !important;
+  }
+
+  #presentacion .imgLeonDeGreiff {
+    width: 200px !important;
+    height: 288px !important;
+  }
+}
+
+/*Cambiar el valor de margen y fuente por default*/
+body {
+  margin: 0px;
+  font-family: maquina;
+  background-color: #008B8B;
+}
+
+.estadio{
+
+    text-align: center;
+    max-height: 300px;
+    max-width:300px;     
+}
+
+/*Quitar valores por defecto de <p>*/
+p {
+  margin: 5px 7px;
+  padding: 0 5px 0 0;
+}
+
+/*Formato a todos los <figcapion>*/
+figcaption {
+  text-align: center;
+  font-size: 15px;
+  font-style: italic;
+  display: block;
+  margin-top: 5px;
+}
+
+/*Formato al título principal, del encabezado del sitio web*/
+h1 {
+  float: left;
+ color: brown;
+  /*Texto en 3d*/
+  text-shadow: 0 1px 0 #ccc,
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
+  font-family: Radiant;
+  font-size: 3em;
+  margin: 25px 20px;
+  padding: 0;
+  font-weight: 400;
+}
+.estadio{
+    border:5px solid #000; 
+    padding:10px; 
+    margin:5px; 
+    width:32px 
+    margin-left: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+    border-color: black;
+    text-align: left;
+        max-width:600px;     
+}
+
+/*Formato del título principal del contenido*/
+h2 {
+  margin: 15px 0;
+  text-align: center;
+  padding: 0;
+  color: #000;
+  font-weight: 700;
+  font-size: 4ex;
+  text-shadow: #afafaf 2px 3px;
+  border-bottom: 3px ridge #8e817b;
+}
+
+/*Formato a los subtítulos del contenido*/
+h3 {
+  margin: 15px 0;
+  padding: 0;
+  color: #000;
+  font-weight: 700;
+  font-size: 3ex;
+  text-shadow: #afafaf 1px 2px;
+  border-bottom: 3px dotted #8e817b;
+}
+h4 {
+  margin: 15px 0;
+  padding: 0;
+  color: #000;
+  font-weight: 400;
+  font-size: 2.5ex;
+  font-style: italic;
+  text-shadow: #afafaf 1px 2px;
+  border-bottom: 2px dotted #8e817b;
+}
+
+/*Formato del texto del pie de página*/
+h5 {
+  font-size: 1.7ex;
+  font-weight: lighter;
+  margin: 0 0 0 30px;
+  float: left;
+  padding-top: 19px;
+  min-width: 150px;
+}
+
+/*Formato de todos los <ul>*/
+ul {
+  list-style: square;
+  margin: 8px 0;
+  padding-left: 30px;
+}
+
+/*Formato del título del encabezado*/
+/*Quitar formato a los links visitados y no visitados*/
+h1 .formatLinks:visited, h1 .formatLinks:link {
+  text-decoration: none;
+  color: #000;
+}
+
+/*Formato de los hipervinculos hacia páginas externas*/
+/* !important para que ese estilo sea el de mayor importancia o precedencia*/
+.hipervinculoExt {
+  color: #2d2fcf !important;
+}
+.hipervinculoExt:hover {
+  color: #5c0d87 !important;
+}
+
+/*Lo siguiente es para que al convertir un elemento en flotante, no desaparezca la "caja" de sus elementos hijos o anidados*/
+.fix::after, .fix::before {
+  display: table;
+  content: "";
+}
+.fix::after {
+  clear: both;
+}
+
+
+
+
+/*Encabezado de la página*/
+
+/*Imagen de fondo del encabezado*/
+.encabezado {
+  background-image: url(imagenes/estadioglobal.jpg);
+  background-repeat: round;
+  border-bottom: 6px ridge #ededed;
+}
+
+/*Contenedor de la imagen y el título del encabezado*/
+.encabezado .contenedor {
+  position: relative;
+  max-width: 764px;
+  margin: 0 auto;
+}
+
+/*Formato de la imagen del encabezado*/
+.encabezado .contenedor .logo img {
+  float: left;
+  padding-top: 2px;    /*Padding-top para que quede centrado horizontalmente con el título*/
+  margin: 25px 73px 25px 20px;
+  width: 120px;
+  height: 54px;
+}
+
+
+
+
+/*Menú de navegación*/
+
+.contenido {
+  width: 100%;
+}
+
+/*Formato del contenedor del menú*/
+.cajaMenu {
+  float: left;
+  width: 263px;
+}
+
+/*Formato del menú (<ul>)*/
+.cajaMenu .menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/*Formato a los elementos de la lista*/
+.cajaMenu .menu li {
+  color: #ededed;
+  font-size: 2.5ex;
+  font-weight: bolder;
+  padding: 11px 5px;
+  margin: 0;
+  border-bottom: 3px solid #ededed;
+}
+
+/*Formato en caso de pasar el mouse sobre los elementos del menú (<li>)*/
+.cajaMenu .menu li:hover {
+  background-color: #ededed;
+  border-bottom: 3px solid #8e817b;
+}
+.cajaMenu .menu li:hover a:link, .cajaMenu .menu li:hover a:visited {
+  color: #8e817b;
+}
+
+/*Quitar formato a los links visitados y no visitados que estén en el menú*/
+.cajaMenu .menu li .formatLinks:visited, .cajaMenu .menu li .formatLinks:link {
+  text-decoration: none;
+  color: #ededed;
+}
+
+
+
+/*Contenido de la página*/
+
+/*Formato del recuadro del contenido principal de la página*/
+#presentacion {
+  display: grid;
+  margin: 30px auto;
+  padding-left: 10px;
+  min-width: 520px;
+  max-width: 900px;
+  background-color: #FFF;
+  border: 10px double #93C8CA;
+  box-shadow: -5px 8px 10px #FFF;
+}
+
+/*Tabulación de todos los subtemas*/
+#presentacion .subTema , #presentacion .subTema .subSubTema{
+  padding-left: 20px;
+}
+
+/*Quitar formato por default a los links visitados y no visitados que estén en #presentacion*/
+#presentacion a:visited , #presentacion a:link {
+  text-decoration: none;
+  color: #08169a;
+}
+
+/*Cuando se pase el cursor sobre un elemento <a> dentro de un elemento <list> que esté en #presentacion*/
+#presentacion li a:hover {
+  color: #31469d;
+}
+
+/*Mapa del sitio*/
+#presentacion .mapaSitio {
+  
+  list-style: square;
+}
+#presentacion .mapaSitio ul {
+  
+  list-style: disc;
+}
+#presentacion .mapaSitio ul ul {
+  
+  list-style: circle;
+}
+
+/*Autor (<ul>)*/
+#presentacion .ulAutor {
+  list-style: none;
+  padding-left: 10px;
+  border-left: 3px double #8e817b;
+}
+
+/*Imagenes que se presentarán en el contenido*/
+
+/*Formato a los contenedores de las imagenes*/
+#presentacion .contImagen {
+  margin: 0;
+  width: 500px;
+  margin: 20px auto;
+}
+#presentacion .contImagen img {
+  display: block;
+  margin: 0 auto;
+}
+/*Border-radius de todas las imagenes que estén en #presentacion*/
+#presentacion img {
+  border-radius: 30px;
+}
+
+#presentacion .imgAuditorio {
+  width: 500px;
+  height: 375px;
+}
+/*Logo colombia*/
+#presentacion .imgUN {
+  width: 200px;
+  height: 200px;
+}
+
+#presentacion .imgPlano {
+  width: 500px;
+  height: 471px;
+}
+
+#presentacion .imgInteriorAud {
+  width: 450px;
+  height: 300px;
+}
+
+#presentacion .imgSalaConf {
+  width: 450px;
+  height: 158px;
+}
+
+#presentacion .imgHall1 , #presentacion .imgHall2, #presentacion .imgOFB{
+  width: 450px;
+  height: 225px;
+}
+
+#presentacion .imgLogoOFB {
+  width: 350px;
+  height: 160px;
+}
+
+#presentacion .imgComoLlegar {
+  width: 500px;
+  height: 363px;
+}
+
+#presentacion .imgConcierto1, #presentacion .imgConcierto2, #presentacion .imgConcierto3 {
+  width: 450px;
+  height: 251px;
+}
+#presentacion .imgLeonDeGreiff {
+  width: 300px;
+  height: 433px;
+}
+
+/*Div contenedor del mapa interactivo*/
+#presentacion .mapa {
+  margin: 15px auto;
+}
+
+
+
+/*Pie de página*/
+
+/*Fondo del pie de página*/
+#pieDePagina {
+  background-color: #ededed;
+}
+
+/*Formato del elemento que contiene todo el pie de página*/
+#pieDePagina .contenedorPie {
+  padding-top: 10px;
+}
+
+/*Formato imagenes pie de página*/
+
+/*Formato del contenedor de las imagenes*/
+#pieDePagina .contenedorPie .imagenesPie {
+  float: right;
+  width: 150px;
+  margin: 0 30px 10px 0;
+}
+/*Formato imagen html, css y javascript*/
+#pieDePagina .contenedorPie .imagenesPie .contImagenHtml img , #pieDePagina .contenedorPie .imagenesPie .contImagenCss img, #pieDePagina .contenedorPie .imagenesPie .contImagenJavascript img {
+  width: 35px;
+  height: 50px;
+  padding: 0 7.5px;
+}
+/*Contenedor de la imagen Css, html y Javascript*/
+#pieDePagina .contenedorPie .imagenesPie .contImagenCss, #pieDePagina .contenedorPie .imagenesPie .contImagenHtml, #pieDePagina .contenedorPie .imagenesPie .contImagenJavascript{
+  margin: 0;
+  float: right;
+  }

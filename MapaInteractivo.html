@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class = "fix">
+  <head>
+    <!--Se trabajará con caracteres utf-8-->
+    <meta charset = "utf-8">
+    <link rel = "stylesheet" type = "text/css" href = "estilos.css"/>
+    <link rel = "icon" type = "text/css" href = "imagenes/fav.ico"/>
+    <title>Estadio Alfonzo López</title>
+    <!--Para facilitar la busqueda de la página en un buscador, se proporcionan algunas palabras clave y el contenido en general de la página-->
+    <meta name = "keywords" content = "Universidad Nacional de Colombia, equipos de futbol,estadio, alfonzo lópez pumarejo"/>
+    <meta name = "description" content = "en esta pagina se hace homeneje y recuento del histórico estadio"/>
+      
+    <script src = "phaser.js"></script>
+    <script src = "primeraPersona.js"></script>
+    <script src = "mapaDos.js"></script>
+    <script src = "mapaUno.js"></script>
+    <script src = "boton.js"></script>
+    <script src = "main.js"></script>
+      
+  </head>
+  <body>
+    <!--Encabezado de la página-->
+    <header class = "encabezado">
+      <!--Elemento que contiene y organiza los elementos del encabezado (Imagen y Título)-->
+      <div class = "contenedor fix">
+        <!--Imagen del encabezado-->
+        <div class = "logo">
+          <a class = "formatLinks" href = "index.html" target = "_self"><img src = "imagenes/UN.png" alt = "bandera de colombia"/></a>
+        </div>
+        <!--Título del encabezado-->
+        <div class = "titulo">
+          <h1><a class = "formatLinks" href = "index.html" target = "_self">Estadio Alfonzo López Pumarejo</a></h1>
+        </div>
+      </div>
+    </header>
+
+    <!--Contenido de la página (Todo lo que no es ni encabezado ni pie de página)-->
+    <section class = "contenido fix">
+      <!--Menús de navegación-->
+      <nav class = "cajaMenu fix">
+        <ul class = "menu fix">      
+        <li><a class = "formatLinks" href = "EspacioUbicacion.html" target = "_self">Espacio y ubicación</a></li>
+          <li><a class = "formatLinks" href = "QuienPuedeEntrar.html" target = "_self">Usuarios</a></li>
+          <li><a class = "formatLinks" href = "Actividades.html" target = "_self">Actividades</a></li>
+          <li><a class = "formatLinks" href = "Historia.html" target = "_self">Historia</a></li>
+          <li><a class = "formatLinks" href = "MapaInteractivo.html" target = "_self">Mapa interactivo</a></li>
+          <li><a class = "formatLinks" href = "Referencias.html" target = "_self">Referencias y créditos</a></li>
+            
+        </ul>
+      </nav>
+
+      <!--Sección principal de la página-->
+      <section id = "presentacion">
+        <!--Encabezado de la seccion principal (título de bienvenida)-->
+        <header>
+          <h2>Mapa Interactivo</h2>
+        </header>
+          <p>Hora tendrá la oportunidad de conocer el estadio, para iniciar de clic en el botón y pordra conocer las entradas, así como el estadio.
+          <br/> 
+        despues ubique su entrada y seleccione para conocerla y pueda relacionarse con su imagen, despues puede dar en la lupa donde referencia la ubicación del estadio.
+        <br/> 
+        Una vez allí de en el botón lateral derecho para dar una vuelta de 360 grados desde el centro de la cancha.        
+          </p>
+          <div id = "contenedor-mapa" class = "mapa"></div>
+      </section>
+    </section>
+
+    <!--Pie de página-->
+    <footer id = "pieDePagina">
+      <!--Contenedor de todo el pie de página para facilitar el darle formato-->
+      <div class = "contenedorPie fix">
+        <!--Contenedor de texto de pie de página-->
+        <div class = "contTexto">
+          <h5>Emmanuel David Correa Morales</h5>
+        </div>
+        <!--Imagenes del pié de pagina-->
+      </div>
+    </footer>
+  </body>
+</html>
